@@ -223,8 +223,8 @@
     e.style.animationDelay = (Math.random()*1.5) + "s";
     document.body.appendChild(e);
     setTimeout(function(el){ return function(){ el.remove(); }; }(e), 8000);
-    setTimeout(emojiRain, 2500);
   }
+  setTimeout(emojiRain, 2500);
 }
 
   function showDenied(last, ledger){
