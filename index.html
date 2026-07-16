@@ -122,22 +122,14 @@
 .rain-emoji{position:fixed;top:-60px;z-index:9;pointer-events:none;user-select:none;animation:efall linear forwards}
 @keyframes efall{to{transform:translateY(110vh) rotate(360deg)}}
 .slam-bubble{
-  display:inline-block;position:relative;margin:18px auto 6px;
+  width:290px;aspect-ratio:505/404;margin:6px auto 2px;
+  background:url("bubble.png") center/contain no-repeat;
+  display:flex;align-items:center;justify-content:center;
+  padding:0 34px 58px 26px;
   font-family:"Comic Sans MS","Comic Sans",cursive;
-  font-size:26px;font-weight:bold;color:var(--ink);
-  background:#fff;border:3px solid var(--ink);border-radius:22px;
-  padding:12px 22px;
-  animation:slam .45s cubic-bezier(.3,1.6,.4,1) both;
+  font-size:25px;font-weight:bold;color:#1C2422;
+  animation:slam .5s cubic-bezier(.3,1.6,.4,1) .1s both;
   transform-origin:center;
-  box-shadow:0 6px 0 rgba(28,36,34,.25);
-}
-.slam-bubble::after{
-  content:"";position:absolute;bottom:-14px;left:34px;
-  border:8px solid transparent;border-top:14px solid var(--ink);
-}
-.slam-bubble::before{
-  content:"";position:absolute;bottom:-9px;left:37px;z-index:1;
-  border:5px solid transparent;border-top:10px solid #fff;
 }
 @keyframes slam{
   0%   {transform:scale(3.2) rotate(-7deg);opacity:0}
